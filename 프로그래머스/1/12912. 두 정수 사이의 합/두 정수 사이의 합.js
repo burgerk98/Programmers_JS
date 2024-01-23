@@ -19,3 +19,16 @@ function solution(a, b) {
     
     return answer;
 }
+
+/*
+지피티가 줄여줬다... 나는 ㅂr보..
+function solution(a, b) {
+    var answer = 0;
+
+    while (a !== b) {
+        answer += (a < b) ? a++ : b++;
+    }
+
+    return answer + a; // a와 b가 같은 경우, 둘 중 아무 수나 리턴
+}
+*/
