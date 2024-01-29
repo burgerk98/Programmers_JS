@@ -1,34 +1,17 @@
+// 두 정수 사이의 합
 function solution(a, b) {
-    var answer = 0;
-    
-    // a가 b보다 작을때와 그 반대일경우 if문으로 적용.
-    if(a < b){
-        // a에서 b까지 더하기.
-        while(a <= b ){
-            answer += a;
-            a++;
+    var answer = 0
+// a가 b보다 작거나 같으면 a부터 b까지의 수 더하기
+    if(a <= b){
+        for(let i = a; i <= b; i++){
+            answer += i
         }
+// b가 a보다 작으면 b부터 a까지의 수 더하기
     }else{
-         // b에서 a까지 더하기.
-        while(b <= a ){
-            answer += b;
-            b++;
+        for(let i = b; i <= a; i++){
+            answer += i
         }
     }
 
-    
     return answer;
 }
-
-/*
-지피티가 줄여줬다... 나는 ㅂr보..
-function solution(a, b) {
-    var answer = 0;
-
-    while (a !== b) {
-        answer += (a < b) ? a++ : b++;
-    }
-
-    return answer + a; // a와 b가 같은 경우, 둘 중 아무 수나 리턴
-}
-*/
