@@ -1,6 +1,6 @@
 function solution(s) {
     //inNaN을 반대로 써 숫자인경우 거짓 숫자가 아닌 경우 참
-    return (s.length === 4 || s.length === 6)&& !isNaN(Number(s)) && !s.includes("e");
+    return (s.length === 4 || s.length === 6)&& !isNaN(s) && !s.includes("e");
     //아스키뭐시기때문에 e가 포함되어있는경우도 처리해줘야한다고 합니도.. 그걸 왜 명시를 ㅇㄴ해두는거야
     
 }
